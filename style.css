@@ -17,34 +17,21 @@ body {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
-
-/* Todas as imagens se ajustam à largura do contêiner */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Se você tiver seções ou containers fixos, deixe-os flexíveis */
-.container {
-  width: 100%;
-  max-width: 1200px; /* limite opcional para telas grandes */
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Para menus ou imagens lado a lado */
-.galeria {
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap; /* Os itens quebram para a próxima linha */
+  justify-content: space-around;
 }
 
-.galeria img {
+.flex-item {
   width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Em telas maiores que 768px, os itens ocupam 50% da largura */
+  .flex-item {
+    width: 45%; 
+  }
 }
 
 
@@ -628,5 +615,6 @@ footer {
     transform: translateY(0);
 
 }
+
 
 
