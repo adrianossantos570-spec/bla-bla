@@ -5,6 +5,11 @@
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-size: 10px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* ==================== RESETAÇÃO GLOBAL ==================== */
 * {
@@ -586,3 +591,4 @@ footer {
     transform: translateY(0);
 
 }
+
