@@ -10,6 +10,43 @@ img {
   height: auto;
   display: block;
 }
+/* Deixa o site flexível e responsivo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Todas as imagens se ajustam à largura do contêiner */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Se você tiver seções ou containers fixos, deixe-os flexíveis */
+.container {
+  width: 100%;
+  max-width: 1200px; /* limite opcional para telas grandes */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Para menus ou imagens lado a lado */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
 
 /* ==================== RESETAÇÃO GLOBAL ==================== */
 * {
@@ -591,4 +628,5 @@ footer {
     transform: translateY(0);
 
 }
+
 
