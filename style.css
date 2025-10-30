@@ -100,7 +100,7 @@ section {
 
 /* ==================== HOME ==================== */
 .home-container {
-    background: url("/imagens/Forest.png") center/cover no-repeat;
+    background: url("imagens/Forest.png") center/cover no-repeat;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -584,4 +584,5 @@ footer {
 .show {
     opacity: 1;
     transform: translateY(0);
+
 }
